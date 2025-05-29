@@ -1,1 +1,83 @@
-/* Add you CSS here */
+/* style.css - Simple, beginner-friendly CSS for personal website */
+
+body {
+  /* Set a light background color and basic font */
+  background: #f7f7fa;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #222;
+}
+
+.hero {
+  /* Vibrant background for hero section */
+  background: linear-gradient(120deg, #6a82fb, #fc5c7d);
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px 30px 20px;
+}
+
+.profile-pic {
+  /* Style for profile image */
+  width: 120px;
+  height: 120px;
+  object-fit: cover; /* Ensures face is visible and image fills the circle */
+  object-position: center; /* Keeps face centered */
+  border-radius: 50%;
+  border: 4px solid #fff;
+  margin-bottom: 15px;
+}
+
+.hero-btn {
+  /* Vibrant button style */
+  display: inline-block;
+  background: #fff;
+  color: #fc5c7d;
+  padding: 12px 28px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 18px;
+  transition: background 0.2s, color 0.2s;
+}
+.hero-btn:hover {
+  background: #fc5c7d;
+  color: #fff;
+}
+
+section {
+  /* Add spacing between sections */
+  margin: 32px auto;
+  max-width: 600px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(100,100,100,0.08);
+  padding: 24px 18px;
+}
+
+h1, h2 {
+  /* Headings styling */
+  margin-top: 0;
+}
+
+.bio, .skills, .portfolio {
+  /* Add a little color to section titles */
+  border-top: 4px solid #6a82fb;
+}
+
+.skills ul {
+  /* Simple list styling */
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+/* Responsive for small screens */
+@media (max-width: 600px) {
+  section {
+    padding: 16px 6px;
+  }
+  .profile-pic {
+    width: 90px;
+    height: 90px;
+  }
+}
