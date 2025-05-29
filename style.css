@@ -15,6 +15,7 @@ body {
   color: #fff;
   text-align: center;
   padding: 40px 20px 30px 20px;
+  scroll-margin-top: 60px; /* Ensure smooth scrolling from navbar */
 }
 
 .profile-pic {
@@ -53,6 +54,7 @@ section {
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(100,100,100,0.08);
   padding: 24px 18px;
+  scroll-margin-top: 60px; /* Ensure smooth scrolling from navbar */
 }
 
 h1, h2 {
@@ -69,6 +71,46 @@ h1, h2 {
   /* Simple list styling */
   list-style-type: disc;
   padding-left: 20px;
+}
+
+/* Navigation bar styles */
+.navbar {
+  background: #6a82fb; /* Use the blue from the hero section */
+  padding: 0;
+  margin: 0;
+  box-shadow: 0 2px 8px rgba(100,100,100,0.08);
+}
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 10px;
+  display: flex;
+  justify-content: center;
+}
+.navbar li {
+  margin: 0 18px;
+}
+.navbar a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 16px 0;
+  transition: color 0.2s;
+}
+.navbar a:hover {
+  color: #fc5c7d; /* Use the pink from the hero section */
+}
+
+/* Add spacing below navbar so content isn't hidden */
+body > .navbar + * {
+  margin-top: 12px;
+}
+
+/* Make emoji icons in skills a bit larger for visibility */
+.skills li {
+  font-size: 1.1em;
+  margin-bottom: 8px;
 }
 
 /* Responsive for small screens */
